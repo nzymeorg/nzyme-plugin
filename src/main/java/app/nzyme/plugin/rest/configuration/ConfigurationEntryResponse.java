@@ -2,8 +2,8 @@ package app.nzyme.plugin.rest.configuration;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.auto.value.AutoValue;
+import jakarta.annotation.Nullable;
 
-import javax.annotation.Nullable;
 import java.util.List;
 
 @AutoValue

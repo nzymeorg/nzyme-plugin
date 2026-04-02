@@ -45,16 +45,17 @@
     </distributionManagement>
 
     <properties>
-        <guava.version>30.1.1-jre</guava.version>
+        <guava.version>33.5.0-jre</guava.version>
         <pcap4j.version>1.8.2</pcap4j.version>
         <jodatime.version>2.10.10</jodatime.version>
-        <jackson.version>2.13.1</jackson.version>
+        <jackson.version>3.1.1</jackson.version>
         <jdbi.version>3.20.0</jdbi.version>
-        <liquibase.version>4.3.5</liquibase.version>
-        <liquibase-slf4j.version>4.0.0</liquibase-slf4j.version>
+        <liquibase.version>5.0.2</liquibase.version>
+        <liquibase-slf4j.version>5.1.0</liquibase-slf4j.version>
         <autovalue.version>1.8.1</autovalue.version>
         <jersey.version>2.34</jersey.version>
         <metrics.version>4.2.7</metrics.version>
+        <jakartaannotation.version>2.1.1</jakartaannotation.version>
 
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
@@ -82,17 +83,17 @@
             <version>${jodatime.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
+            <groupId>tools.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
             <version>${jackson.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
+            <groupId>tools.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>${jackson.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <groupId>tools.jackson.datatype</groupId>
             <artifactId>jackson-datatype-joda</artifactId>
             <version>${jackson.version}</version>
         </dependency>
@@ -146,6 +147,17 @@
             <groupId>io.dropwizard.metrics</groupId>
             <artifactId>metrics-core</artifactId>
             <version>${metrics.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
+            <version>${jakartaannotation.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>13.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

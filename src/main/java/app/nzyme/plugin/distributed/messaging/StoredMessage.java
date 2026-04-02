@@ -1,9 +1,9 @@
 package app.nzyme.plugin.distributed.messaging;
 
 import com.google.auto.value.AutoValue;
+import jakarta.annotation.Nullable;
 import org.joda.time.DateTime;
 
-import javax.annotation.Nullable;
 import java.util.Map;
 import java.util.UUID;
 

@@ -1,6 +1,6 @@
 package app.nzyme.plugin.rest.configuration;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 
 public class ConstraintValidationResult {
 
