@@ -33,4 +33,7 @@ public interface Database {
     <R, X extends Exception> R withHandle(HandleCallback<R, X> callback) throws X;
     <X extends Exception> void useHandle(final HandleConsumer<X> callback) throws X;
 
+    <R, X extends Exception> R inTransaction(HandleCallback<R, X> callback) throws X;
+    <X extends Exception> void useTransaction(final HandleConsumer<X> callback) throws X;
+
 }
