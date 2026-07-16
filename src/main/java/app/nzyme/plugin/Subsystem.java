@@ -7,7 +7,6 @@ public enum Subsystem {
     ETHERNET,
     BLUETOOTH,
     UAV,
-    GNSS,
     GENERIC
     
 }
